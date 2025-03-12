@@ -1,0 +1,102 @@
+/* App.css */
+
+/* General styles for the table */
+.reservation-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.reservation-table th,
+.reservation-table td {
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Header styling */
+.reservation-table th {
+  background-color: #4c7aaf;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Table row styling */
+.reservation-table tr:nth-child(even) {
+  background-color: #dcdcdc;
+}
+
+.reservation-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.reservation-table tr:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Styling for table cells */
+.reservation-table td {
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Add a hover effect for table rows */
+.reservation-table tr:hover td {
+  color: #333;
+}
+
+/* Header font size and cell font size */
+.reservation-table th {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reservation-table td {
+  font-size: 16px;
+}
+
+/* Add a small shadow to the header */
+.reservation-table th {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Adding spacing between the table and other content */
+h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Style for the loading/error message */
+.loading-error {
+  color: #ff4c4c;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive design: Table layout for smaller screens */
+@media (max-width: 768px) {
+  .reservation-table {
+      font-size: 14px;
+  }
+
+  .reservation-table th,
+  .reservation-table td {
+      padding: 12px;
+  }
+  
+  .reservation-table th {
+      font-size: 16px;
+  }
+}
+
